@@ -1,0 +1,40 @@
+/* Home.css */
+.home-container {
+    padding: 20px;
+    background-color: rgb(29, 29, 29);  /* Light gray background (you can change this) */
+}
+
+.site-title {
+    font-size: 50px;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);  /* Optional: change text color to contrast with the background */
+}
+
+.site-description {
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);  /* Optional: change text color to contrast with the background */
+}
+
+.card {
+    margin-bottom: 20px; /* Adds space between cards */
+  }
+  
+  .card-title {
+    font-size: 22px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+  }
+
+  .custom-card {
+    background-color: rgb(253, 199, 53); /* Light blue background */
+    color: #000000; /* Dark text color */
+  }
+  
+/* index.css (or your main global CSS file) */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(31, 31, 31);
+}

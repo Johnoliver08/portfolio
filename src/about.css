@@ -1,0 +1,93 @@
+/* about.css */
+
+/* Global Container styling for the pages */
+.about-container {
+    background-color: hwb(0 1% 99%);  /* Set the background color */
+    padding: 30px;
+    min-height: 100vh; /* Ensure the page fills the entire height of the viewport */
+    color: #fff; /* White text color for contrast */
+  }
+  
+  /* Card Styling */
+  .card {
+    margin-bottom: 20px;
+    border-radius: 8px;  /* Optional: adds rounded corners to cards */
+    background-color: hwb(44 19% 0%); /* Set a white background for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: adds subtle shadow */
+  }
+  
+  /* Card Title */
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;  /* Blue color for the title */
+  }
+  
+  /* Card Text */
+  .card-text {
+    font-size: 16px;
+    color: #000000;  /* Darker text color for better readability */
+  }
+  
+  /* Profile Image Styling */
+  img.rounded-circle {
+    border: 4px solid #cdc575;  /* Blue border around the image */
+    margin-top: 20px;
+    width: 150px; /* Set width of the image */
+    height: 150px; /* Set height of the image */
+    object-fit: cover; /* Ensure the image covers the circle shape */
+    border-radius: 50%; /* Ensure the image stays round */
+  }
+  
+  /* Alert Section Styling */
+  .alert {
+    background-color:hwb(41 24% 5%); /* Light gray background for the alert */
+    color: #333;  /* Dark text for contrast */
+  }
+  
+  /* Button Styling */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
+  /* about.css */
+
+/* Target ListGroup.Item for color changes */
+.list-group-item {
+  color: #fff; /* Set text color */
+  background-color: #905a08; /* Set background color */
+  border: none; /* Remove borders */
+}
+
+/* Change background color on hover */
+.list-group-item:hover {
+  background-color: #ee8f67; /* Darker blue on hover */
+  color: #fff; /* Ensure text color stays white on hover */
+}
+
+/* Specific styles for individual list items (if needed) */
+.list-group-item.react {
+  background-color: #61dafb;  /* Light blue for React */
+}
+
+.list-group-item.node {
+  background-color: #339933;  /* Green for Node.js */
+}
+
+.list-group-item.javascript {
+  background-color: #f7df1e;  /* Yellow for JavaScript */
+}
+
+.list-group-item.html {
+  background-color: #e34f26;  /* Orange for HTML */
+}
+
+.list-group-item.sql {
+  background-color: #db5a42;  /* Light red for SQL */
+}
