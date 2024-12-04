@@ -12,6 +12,18 @@ function About() {
 
   return (
     <div className="about-container">
+       {/* Profile Picture Section */}
+       <Row className="mt-4">
+          <Col className="text-center">
+            <img
+              src={imgError ? fallbackImage : "https://scontent.fmnl4-6.fna.fbcdn.net/v/t39.30808-6/329791058_683348890248315_8407160963727830391_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeF37Ge1zxZ7l9vsHSYS7pmG0-OoLT4PZ_jT46gtPg9n-BQ95Dmr0I-6fosmCSZVMnK3zxady-nmrMfCjPSYirvi&_nc_ohc=3wURVdctYHEQ7kNvgGRo735&_nc_zt=23&_nc_ht=scontent.fmnl4-6.fna&_nc_gid=AhJubL4nz031vPYqrpkGTu4&oh=00_AYBr6g_XnddkBwRgrxQBJ9gdr37gWluy6ad27l40NU3SJg&oe=6755C306"}
+              alt="Profile"
+              className="rounded-circle"
+              style={{ width: '150px', height: '150px', marginBottom: '20px' }}
+              onError={() => setImgError(true)} // Sets error state if the image fails to load
+            />
+          </Col>
+        </Row>
       {/* Hero Section using Alert */}
       <Alert variant="secondary" className="text-center" style={{ padding: '3rem 0' }}>
         <h1 style={{ fontSize: '50px', color: 'white', fontWeight: 'bold' }}>About Me</h1>
@@ -53,19 +65,6 @@ function About() {
                 </ListGroup>
               </Card.Body>
             </Card>
-          </Col>
-        </Row>
-
-        {/* Profile Picture Section */}
-        <Row className="mt-4">
-          <Col className="text-center">
-            <img
-              src={imgError ? fallbackImage : "https://scontent.fmnl4-6.fna.fbcdn.net/v/t39.30808-6/329791058_683348890248315_8407160963727830391_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeF37Ge1zxZ7l9vsHSYS7pmG0-OoLT4PZ_jT46gtPg9n-BQ95Dmr0I-6fosmCSZVMnK3zxady-nmrMfCjPSYirvi&_nc_ohc=3wURVdctYHEQ7kNvgGRo735&_nc_zt=23&_nc_ht=scontent.fmnl4-6.fna&_nc_gid=AhJubL4nz031vPYqrpkGTu4&oh=00_AYBr6g_XnddkBwRgrxQBJ9gdr37gWluy6ad27l40NU3SJg&oe=6755C306"}
-              alt="Profile"
-              className="rounded-circle"
-              style={{ width: '150px', height: '150px' }}
-              onError={() => setImgError(true)} // Sets error state if the image fails to load
-            />
           </Col>
         </Row>
       </Container>
